@@ -10,7 +10,7 @@
         android:id="@+id/sign_up_constraint_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="com.justlive.justinbuhay.collegemeets.SignInActivity">
+        tools:context="com.justlive.justinbuhay.barberup.SignInActivity">
 
         <LinearLayout
             android:id="@+id/email_groupview"
@@ -86,6 +86,7 @@
             android:background="@drawable/login_button_custom"
             android:elevation="8dp"
             android:text="@string/log_in"
+            android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/password_groupview" />
@@ -105,22 +106,39 @@
 
         <Button
             android:id="@+id/sign_up_button"
-            style="?android:attr/borderlessButtonStyle"
+            style="?attr/borderlessButtonStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/login_button_custom"
             android:elevation="8dp"
             android:padding="16dp"
             android:text="@string/sign_up"
+            android:textColor="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
+        <ImageView
+            android:id="@+id/logo_main"
+            android:layout_width="123dp"
+            android:layout_height="116dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:src="@mipmap/ic_launcher_round"
+            app:layout_constraintBottom_toTopOf="@+id/email_groupview"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <TextView
-            android:id="@+id/collegemeets_title"
-            android:textSize="24sp"
+            android:id="@+id/textView2"
+            android:textColor="@color/black"
+            android:textStyle="italic"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="36sp"
             android:layout_marginBottom="8dp"
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
@@ -129,7 +147,8 @@
             app:layout_constraintBottom_toTopOf="@+id/email_groupview"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/logo_main"
+            app:layout_constraintVertical_bias="0.110000014" />
 
 
     </android.support.constraint.ConstraintLayout>

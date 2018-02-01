@@ -1,4 +1,4 @@
-package com.justlive.justinbuhay.collegemeets;
+package com.justlive.justinbuhay.barberup;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

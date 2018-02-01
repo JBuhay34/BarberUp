@@ -1,4 +1,4 @@
-package com.justlive.justinbuhay.collegemeets
+package com.justlive.justinbuhay.barberup
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
