@@ -38,13 +38,14 @@ class UserProfile : FragmentActivity() {
 
 
         override fun getCount(): Int {
-            return 2
+            return 3
         }
 
         override fun getItem(position: Int): Fragment {
             when(position){
                 0-> return BarberProfileFragment()
                 1-> return BarberAvailabilityFragment()
+                2-> return HaircutImagesFragment()
 
                 else ->
                         return BarberProfileFragment()
@@ -55,6 +56,7 @@ class UserProfile : FragmentActivity() {
             when(position){
                 0-> return "Barber Information"
                 1-> return "Availability"
+                2-> return "Images"
 
                 else ->
                     return "Barber Information"
