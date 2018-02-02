@@ -8,20 +8,24 @@
     tools:context="com.justlive.justinbuhay.barberup.UserProfile"
     tools:layout_editor_absoluteY="25dp">
 
+
+
     <android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/pager"
         android:layout_width="match_parent"
         android:layout_height="match_parent" >
-        <android.support.v4.view.PagerTabStrip
-            android:id="@+id/pager_header"
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tablayout"
             android:layout_width="match_parent"
-            style="@style/SmallBarberUpText"
-            android:textColor="@color/white"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
-            android:paddingBottom="4dp"
-            android:paddingTop="4dp"
-            android:background="@color/colorAccent"/>
+            app:tabMode="fixed"
+            app:tabGravity="fill"
+            android:background="@color/colorAccent"
+            app:tabTextColor="@color/white"
+            app:tabSelectedTextColor="@color/white"/>
+
     </android.support.v4.view.ViewPager>
 
 
