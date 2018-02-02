@@ -18,14 +18,93 @@
             style="@style/LargeBarberUpText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="24dp"
             android:padding="8dp"
             android:text="@string/availability"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_rating"
+            android:orientation="horizontal"
+            android:padding="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/month_text_view">
+
+            <TextView
+                style="@style/SmallBarberUpText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="S"
+                android:textColor="@color/white" />
+
+            <TextView
+                style="@style/SmallBarberUpText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="M"
+                android:textColor="@color/white" />
+
+            <TextView
+                style="@style/SmallBarberUpText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="T"
+                android:textColor="@color/white" />
+
+            <TextView
+                style="@style/SmallBarberUpText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="W"
+                android:textColor="@color/white" />
+
+            <TextView
+                style="@style/SmallBarberUpText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="Th"
+                android:textColor="@color/white" />
+
+            <TextView
+                style="@style/SmallBarberUpText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="F"
+                android:textColor="@color/white" />
+
+            <TextView
+                style="@style/SmallBarberUpText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="S"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/LargeBarberUpText"
+            android:id="@+id/month_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="February"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/availability_text_view" />
 
     </android.support.constraint.ConstraintLayout>
 

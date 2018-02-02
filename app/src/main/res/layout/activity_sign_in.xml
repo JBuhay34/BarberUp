@@ -134,8 +134,7 @@
 
         <TextView
             android:id="@+id/textView2"
-            android:textColor="@color/black"
-            android:textStyle="italic"
+            style="@style/LargeBarberUpText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="36sp"
